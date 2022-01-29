@@ -5,7 +5,7 @@ using namespace std;
     Approach: Brute Force
         1. if next number is smaller then equal to previous number then sum it
         2. if next number is greater then previous number then substract the twice of previous number from 
-        current and add it
+        current and add it 
 */
 
 class Solution {
