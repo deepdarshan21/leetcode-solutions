@@ -9,8 +9,7 @@ using namespace std;
        1. At last store stack has some opening brackets remaining
        2. String has only closing bracket
 
-   Time Complexity: O()
-   Space: O()
+   Time Complexity: O(n) Space: O(1)
 */
 
 class Solution {
