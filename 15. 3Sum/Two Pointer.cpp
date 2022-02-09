@@ -11,8 +11,8 @@ using namespace std;
 
    Time Complexity: O(n^2) Space: O(n^3)
    Status: Accepted
-   Runtime: 197 ms faster than: 28.45%
-   Memory Usage: 30 MB less than: 13.57%
+   Runtime: 149 ms faster than: 41.35%
+   Memory Usage: 24.7 MB less than: 19.95%
 */
 
 class Solution {
@@ -30,15 +30,9 @@ class Solution {
             int low = i + 1, high = nums.size() - 1, target = 0 - nums[i];
             while (low < high) {
                 if (nums[low] + nums[high] == target) {
-                    vector<int> triplet;
-                    triplet.push_back(nums[i]);
-                    triplet.push_back(nums[low]);
-                    triplet.push_back(nums[high]);
-                    tripletsSet.insert(triplet);
+                    tripletsSet.insert({nums[i], nums[low], nums[high]});
                     low++;
                     high--;
-                    triplet.pop_back();
-                    triplet.pop_back();
                 } else if (nums[low] + nums[high] < target) {
                     low++;
                 } else {
