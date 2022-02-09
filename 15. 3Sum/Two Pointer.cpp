@@ -11,8 +11,8 @@ using namespace std;
 
    Time Complexity: O(n^2) Space: O(n^3)
    Status: Accepted
-   Runtime: 149 ms faster than: 41.35%
-   Memory Usage: 24.7 MB less than: 19.95%
+   Runtime: 63 ms faster than: 92.45%
+   Memory Usage: 20 MB less than: 66.86%
 */
 
 class Solution {
@@ -21,26 +21,38 @@ class Solution {
         if (nums.size() < 3) {
             return {};
         }
-        set<vector<int>> tripletsSet;
+        vector<vector<int>> triplets;
+        int A, B, C, sum, low, high;
         sort(nums.begin(), nums.end());
         for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] > 0) {
+                break;
+            }
+            A = nums[i];
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
-            int low = i + 1, high = nums.size() - 1, target = 0 - nums[i];
+            low = i + 1;
+            high = nums.size() - 1;
             while (low < high) {
-                if (nums[low] + nums[high] == target) {
-                    tripletsSet.insert({nums[i], nums[low], nums[high]});
-                    low++;
+                B = nums[low];
+                C = nums[high];
+                sum = A + B + C;
+                if (sum == 0) {
+                    triplets.push_back({A, B, C});
+                    while (low < high && nums[low] == B) {
+                        low++;
+                    }
+                    while (low < high && nums[high] == C) {
+                        high--;
+                    }
+                } else if (sum > 0) {
                     high--;
-                } else if (nums[low] + nums[high] < target) {
-                    low++;
                 } else {
-                    high--;
+                    low++;
                 }
             }
         }
-        vector<vector<int>> triplets(tripletsSet.begin(), tripletsSet.end());
         return triplets;
     }
 };
