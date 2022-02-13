@@ -19,7 +19,7 @@ struct ListNode {
 
    Time Complexity: O(m+n) Space: O(m+n)
    Status: Accepted
-   Runtime: 4 ms faster than: 9499%
+   Runtime: 4 ms faster than: 94.99%
    Memory Usage: 14.9 MB less than: 15.40%
 */
 
