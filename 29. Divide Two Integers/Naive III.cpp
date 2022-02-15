@@ -11,8 +11,8 @@ using namespace std;
 
    Time Complexity: O(log(n)) Space: O(1)
    Status: Accepted
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Runtime: 0 ms faster than: 100%
+   Memory Usage: 6 MB less than: 28.32%
    Remarks: Make "divisor", "dividend" and "quotient" negative and make them positive again(if required)
 */
 
