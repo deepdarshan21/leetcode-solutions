@@ -9,11 +9,11 @@ using namespace std;
    Edge Cases:
         1. If "divisor" is -1 and "dividend" is INT_MIN -> return INT_MAX(can't store abs(INT_MIN) in "int")
 
-   Time Complexity: O() Space: O(1)
+   Time Complexity: O(log(n)) Space: O(1)
    Status: Accepted
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
-   Remarks:
+   Remarks: Make "divisor", "dividend" and "quotient" negative and make them positive again(if required)
 */
 
 class Solution {
