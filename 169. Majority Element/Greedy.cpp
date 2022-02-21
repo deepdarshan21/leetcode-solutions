@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-   Approach: Greedy
+   Approach: Greedy(Boyer-Moore Voting Algorithm)
         Count the frequency of selected element, if element other then selected comes then uncount,
         if count of selected element is 0 then select new element.
 
