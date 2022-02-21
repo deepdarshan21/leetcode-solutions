@@ -3,7 +3,7 @@ using namespace std;
 
 /*
    Approach: Hashing
-
+        Store the frequency of each element in hash set
 
    Edge Cases:
 
