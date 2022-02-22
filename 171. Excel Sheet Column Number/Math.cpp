@@ -7,7 +7,7 @@ using namespace std;
 
    Edge Cases:
 
-   Time Complexity: O(n) Space: O(1)
+   Time Complexity: O(nlogn) Space: O(1)
    Status: Accepted
    Runtime: 4 ms faster than: 47.34%
    Memory Usage: 6.1 MB less than: 28.55%
