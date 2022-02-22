@@ -11,7 +11,7 @@ using namespace std;
    Status: Accepted
    Runtime: 13 ms faster than: 8.00%
    Memory Usage: 11.1 MB less than: 30.00%
-   Remarks: It was running in O(n) time complexity but question said that solve it in O(logn) time complexity
+   Remarks: It was running in O(nlogn) time complexity but question said that solve it in O(logn) time complexity
 */
 
 class Solution {
