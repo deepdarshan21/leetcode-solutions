@@ -11,7 +11,7 @@ using namespace std;
    Status: Accepted
    Runtime: 4 ms faster than: 47.34%
    Memory Usage: 6.1 MB less than: 28.55%
-   Remarks:
+   Remarks: Try without revesing the given string
 */
 
 class Solution {
