@@ -6,10 +6,10 @@ using namespace std;
         Run a loop till start element is smaller then end element
             if mid element is equal to target: return mid
             else if mid element is greater than start element -> array before mid element must be sorted
-                if target is smaller than mid element and greater than start element: new end element is mid element -> unrotaed part
-                else : new start element is mid element -> roated part
+                if target is smaller than mid element and greater than start element: new end element is mid element -> unrotated part
+                else : new start element is mid element -> rotated part
             else -> array after mid must be sorted
-                if target is greater than mid element and smaller than end element: new start element is mid element -> unroated side
+                if target is greater than mid element and smaller than end element: new start element is mid element -> unrotated side
                 else : new end element is mid element -> rotated side
         return -1 -> element not found in array
 
