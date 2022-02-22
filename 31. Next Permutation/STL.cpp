@@ -3,7 +3,7 @@ using namespace std;
 
 /*
    Approach: Using Standard Templete Library
-        STL has a "next_permutation" name function which returns next permutation or "false" if
+        STL has a "next_permutation" function which returns next permutation or "false" if
         no further permutations are available
 
    Edge Cases:
