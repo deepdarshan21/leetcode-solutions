@@ -11,15 +11,15 @@ struct ListNode {
 };
 
 /*
-   Approach:
+   Approach: Merge Sort
 
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status:
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Time Complexity: O(nlogn) Space: O(logn)
+   Status: Accepted
+   Runtime: 144 ms faster than: 48.83%
+   Memory Usage: 29.1 MB less than: 87.85%
    Remarks:
 */
 
