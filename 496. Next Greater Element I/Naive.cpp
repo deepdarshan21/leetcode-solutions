@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-   Approach:
+   Approach: Brute Force
 
 
    Edge Cases:
