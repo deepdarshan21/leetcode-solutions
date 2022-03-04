@@ -4,7 +4,7 @@ using namespace std;
 /*
    Approach: Brute Force
         Poure the available champange in that glass and then check if there is any overflow then
-        remove the overflowable champagne into glasses below it equally.
+        remove the overflowable champagne into glasses below to it equally.
 
    Edge Cases:
 
