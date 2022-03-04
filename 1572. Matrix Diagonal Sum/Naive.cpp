@@ -9,9 +9,9 @@ using namespace std;
    Edge Cases:
 
    Time Complexity: O(n) Space: O(1)
-   Status:
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Status: Accepted
+   Runtime: 12 ms faster than: 94.25%
+   Memory Usage: 11.4 MB less than: 11.30%
    Remarks:
 */
 
