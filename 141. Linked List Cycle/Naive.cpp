@@ -9,15 +9,15 @@ struct ListNode {
 };
 
 /*
-   Approach:
+   Approach: Storing the address of each node
 
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
+   Time Complexity: O(n) Space: O(n)
    Status: Wrong answer
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Runtime: 255 ms faster than: 5.27%
+   Memory Usage: 8.9 MB less than: 16.03%
    Remarks:
 */
 
