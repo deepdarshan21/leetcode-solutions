@@ -7,8 +7,8 @@ using namespace std;
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status:
+   Time Complexity: O(n) Space: O(n)
+   Status: Time Limit Exceeded
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
    Remarks:
