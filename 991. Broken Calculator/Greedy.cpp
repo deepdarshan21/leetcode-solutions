@@ -2,8 +2,10 @@
 using namespace std;
 
 /*
-   Approach:
-
+   Approach: Greedy
+        If target is divisible by 2 then divide it
+        if not then add 1 in it
+        if target become smaller than one then make target start val by adding 1
 
    Edge Cases:
 
