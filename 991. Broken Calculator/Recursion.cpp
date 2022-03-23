@@ -2,13 +2,13 @@
 using namespace std;
 
 /*
-   Approach:
-
+   Approach: Recursion
+        Check for all the test cases
 
    Edge Cases:
 
    Time Complexity: O() Space: O()
-   Status:
+   Status: Runtime Error
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
    Remarks:
