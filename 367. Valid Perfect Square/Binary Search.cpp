@@ -40,6 +40,4 @@ class Solution {
         }
         return false;
     }
-}
-}
-;
+};
