@@ -3,7 +3,8 @@ using namespace std;
 
 /*
    Approach: Binary Search
-        Use the concept of infinite Binary Search to find the element which statisfies the given condition
+        Use the concept of infinite Binary Search to find the element which statisfies the given
+        condition
 
    Edge Cases:
 
