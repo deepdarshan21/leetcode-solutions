@@ -8,7 +8,7 @@ using namespace std;
    Edge Cases:
         1. If piles' size is greater than total hours gaurd is out than it is not possible
 
-   Time Complexity: O() Space: O()
+   Time Complexity: O(nlogn) Space: O(1)
    Status: Accepted
    Runtime: 46 ms faster than: 83.98%
    Memory Usage: 19 MB less than: 26.12%
