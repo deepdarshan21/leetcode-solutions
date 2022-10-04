@@ -2,13 +2,12 @@
 using namespace std;
 
 /*
-   Approach:
-
+   Approach: Bit Manipulation
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status:
+   Time Complexity: O(1) Space: O(1)
+   Status: Accepted
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
    Remarks:
