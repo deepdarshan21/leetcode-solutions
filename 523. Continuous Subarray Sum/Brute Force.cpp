@@ -2,13 +2,13 @@
 using namespace std;
 
 /*
-   Approach:
+   Approach: Brute Force
 
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status:
+   Time Complexity: O(n^2) Space: O(1)
+   Status: Time Limit Exceeded
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
    Remarks:
