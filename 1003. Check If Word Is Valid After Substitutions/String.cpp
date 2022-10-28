@@ -2,13 +2,12 @@
 using namespace std;
 
 /*
-   Approach:
-
+   Approach: String
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status:
+   Time Complexity: O(n^2) Space: O(n)
+   Status: Memory Limit Exceeded
    Runtime:  ms faster than: %
    Memory Usage:  MB less than: %
    Remarks:
@@ -20,11 +19,13 @@ class Solution {
         string t = "";
         int n = s.size();
         for (int i = 0; i < n; i++) {
+            // cout<<s[i]<<" ";
             if (s[i] == 'a')
-                t = t.substr(i) + "abc" + t.substr(i, n - i);
-            else if (t.size() >= i)
+                t = t.substr(0, i) + "abc" + t.substr(i, t.size() - i);
+            else if (t.size() <= i || t[i] != s[i])
                 return false;
+            // cout<<t<<endl;
         }
-        return true;
+        return t == s;
     }
 };
