@@ -39,6 +39,6 @@ class CustomStack {
     }
 
     void increment(int k, int val) {
-        for (int j = 0; j < min(k, i + 1); j++) st[i] += val;
+        for (int j = 0; j < min(k, i); j++) st[i] += val;
     }
 };
