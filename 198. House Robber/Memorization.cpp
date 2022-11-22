@@ -24,7 +24,7 @@ class Solution {
         if (i < 0) return 0;
         if (i <= 1) return nums[i];
         if (dp[i] != -1) return dp[i];
-        dp[i] = min(help(i - 2, nums, dp), help(i - 3, nums, dp));
+        dp[i] = nums[i] + max(help(i - 2, nums, dp), help(i - 3, nums, dp));
         return dp[i];
     }
 };
