@@ -6,10 +6,10 @@ using namespace std;
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status: Time Limit Exceeded
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Time Complexity: O(nlogn) Space: O(1)
+   Status: Accepted
+   Runtime: 439 ms faster than: 5%
+   Memory Usage: 67 MB less than: 55%
    Remarks:
 */
 
