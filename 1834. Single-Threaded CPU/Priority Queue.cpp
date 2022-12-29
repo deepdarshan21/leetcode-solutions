@@ -2,15 +2,14 @@
 using namespace std;
 
 /*
-   Approach:
-
+   Approach: First sort and then push them in min-heap
 
    Edge Cases:
 
-   Time Complexity: O() Space: O()
-   Status: Time Limit Exceeded
-   Runtime:  ms faster than: %
-   Memory Usage:  MB less than: %
+   Time Complexity: O(nlogn) Space: O(n)
+   Status: Accepted
+   Runtime: 727 ms faster than: 78.4%
+   Memory Usage: 150.7 MB less than: 30.42%
    Remarks:
 */
 
@@ -20,23 +19,25 @@ class Solution {
         int n = tasks.size();
         vector<int> res;
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-        int time = 0, added = 0;
-        while (!pq.empty() || added < n) {
-            for (int i = 0; i < n; i++) {
-                if (time >= tasks[i][0]) {
-                    pq.push({tasks[i][1], i});
-                    tasks[i][0] = INT_MAX;
-                    added++;
-                }
+        vector<vector<int>> sortedTasks;
+        for (int i = 0; i < tasks.size(); ++i) {
+            sortedTasks.push_back({tasks[i][0], tasks[i][1], i});
+        }
+        sort(sortedTasks.begin(), sortedTasks.end());
+        int idx = 0;
+        long long time = 0;
+        while (!pq.empty() || idx < n) {
+            if (pq.empty() && time < sortedTasks[idx][0]) {
+                time = sortedTasks[idx][0];
             }
-            if (!pq.empty()) {
-                int tmp = pq.top().first;
-                res.push_back(pq.top().second);
-                pq.pop();
-                time += tmp;
-            } else {
-                time++;
+            while (idx < n && time >= sortedTasks[idx][0]) {
+                pq.push({sortedTasks[idx][1], sortedTasks[idx][2]});
+                idx++;
             }
+            auto [processTime, index] = pq.top();
+            pq.pop();
+            res.push_back(index);
+            time += processTime;
         }
         return res;
     }
