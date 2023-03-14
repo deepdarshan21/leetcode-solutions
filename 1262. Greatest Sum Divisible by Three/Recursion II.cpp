@@ -24,7 +24,7 @@ class Solution {
             if (idx == n) return rem ? INT_MIN : 0;
             int tmp1, tmp2;
             tmp1 = self(self, idx + 1, rem);
-            tmp2 = nums[i] + self(self, idx + 1, (rem + nums[i]) % 3);
+            tmp2 = nums[idx] + self(self, idx + 1, (rem + nums[idx]) % 3);
             return max(tmp1, tmp2);
         };
         return rec(rec, 0, 0);
