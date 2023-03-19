@@ -48,20 +48,16 @@ class WordDictionary {
     };
     Trie* root;
     bool helper(Trie* root, string& word, int idx) {
-        for (int i = idx; i < word.size() && root; i++) {
-            if (word[i] != '.') {
-                root = root->child[word[i]];
-            } else {
-                Trie* tmp;
-                for (int j = 0; j < 26; j++) {
-                    tmp = root->child[j + 97];
-                    if (helper(tmp, word, i + 1)) {
-                        return true;
-                    }
+        for (int i = 0; i < word.size(); i++) {
+            if (word[i] == '.') {
+                for (auto ch : root->child) {
+                    if (helper(ch.second, word, i + 1)) return true;
+                    return false;
                 }
-                return false;
+                if (root->child[word[i]] == nullptr) return false;
+                root = root->child[word[i]];
             }
         }
-        return root && root->isEnd;
+        return root->isEnd;
     }
 };
