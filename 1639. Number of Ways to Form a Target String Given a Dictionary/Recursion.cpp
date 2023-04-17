@@ -24,8 +24,8 @@ class Solution {
             if (i >= len) return 1;
             if (k >= n) return 0;
             int res = 0;
-            for (int j = 0; j < n; j++) {
-                for (int idx = k; idx < m; idx++) {
+            for (int j = 0; j < m; j++) {
+                for (int idx = k; idx < n; idx++) {
                     if (target[i] == words[j][idx]) {
                         res = (res + self(self, idx + 1, i + 1)) % mod;
                     }
